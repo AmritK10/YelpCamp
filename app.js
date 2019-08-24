@@ -1,35 +1,14 @@
 var express     =	require("express"),
  	app         =	 express(),
  	bodyParser  =	require("body-parser"),
- 	mongoose    =	require("mongoose");
+ 	mongoose    =	require("mongoose")
+ 	Campground  =	require("./models/campground")
+ 	seedDB		=	require("./seeds");
 
 mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser:true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
-
-//Schema Setup
-var campGroundSchema=new mongoose.Schema({
-	name:String,
-	image:String,
-	description:String
-});
-
-var Campground=mongoose.model("Campground",campGroundSchema);
-
-// Campground.create(
-// 	{
-// 	name:"San jose" ,
-// 	image:"https://images.unsplash.com/photo-1455763916899-e8b50eca9967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-// 	description:"This is San Jose. The best Jose. Come here and enjoy the best vacation you ever wanted!"
-// 	},function(err,campground){
-// 		if(err){
-// 			console.log(err);
-// 		}
-// 		else{
-// 			console.log("Newly Created Campground");
-// 			console.log(campground);
-// 		}
-// });
+seedDB();
 
 app.get("/",function(req,res){
 	res.render("landing");
@@ -71,7 +50,7 @@ app.get("/campgrounds/new",function(req,res){
 
 //SHOW-shows more info about one campground
 app.get("/campgrounds/:id",function(req,res){
-	Campground.findById(req.params.id,function(err,foundCampground){
+	Campground.findById(req.params.id).populate("comments").exec(function(err,foundCampground){
 		if(err){
 			console.log(err);
 		}
