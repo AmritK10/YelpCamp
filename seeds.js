@@ -6,17 +6,17 @@ var data=[
 	{
 		name:"Stars Galore",
 		image:"https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2749&q=80",
-		description:"blah blah blah blah"
+		description:"Porchetta tenderloin shoulder, prosciutto chicken shank drumstick. Tongue hamburger jowl, frankfurter capicola salami boudin venison. Ground round swine corned beef shank tongue doner sausage. Bresaola picanha meatloaf filet mignon beef pork corned beef landjaeger sausage ground round andouille sirloin tail swine pig."
 	},
 	{
 		name:"Purple Trees",
 		image:"https://images.unsplash.com/photo-1537565266759-34bbc16be345?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80",
-		description:"giyuctccvv  vutctv  uvcfcdtv gcvyg hgcf"
+		description:"Porchetta tenderloin shoulder, prosciutto chicken shank drumstick. Tongue hamburger jowl, frankfurter capicola salami boudin venison. Ground round swine corned beef shank tongue doner sausage. Bresaola picanha meatloaf filet mignon beef pork corned beef landjaeger sausage ground round andouille sirloin tail swine pig."
 	},
 	{
 		name:"Heavens Gate",
 		image:"https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-		description:"hctfc yftcg  yfucyvv blah blah blah"
+		description:"Porchetta tenderloin shoulder, prosciutto chicken shank drumstick. Tongue hamburger jowl, frankfurter capicola salami boudin venison. Ground round swine corned beef shank tongue doner sausage. Bresaola picanha meatloaf filet mignon beef pork corned beef landjaeger sausage ground round andouille sirloin tail swine pig."
 	}
 ]
 function seedDB(){
