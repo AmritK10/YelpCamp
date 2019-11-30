@@ -8,7 +8,7 @@ Users can post campgrounds on the website for other campers to visit/stay.They c
 User authorization has been implemented so to as safeguard users content.<br>
 
 ## Technologies Used
-<b>Front End: </b> Html5, Css, Bootstrap <br>
+<b>Front End: </b> Html5, Css, Bootstrap, Javascript <br>
 <b>Backend: </b> Nodejs, Expressjs, MongoDB
 
 ## Demo
