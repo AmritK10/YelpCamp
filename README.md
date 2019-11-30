@@ -9,7 +9,7 @@ User authorization has been implemented so to as safeguard users content.<br>
 
 ## Technologies Used
 <b>Front End: </b> Html5, Css, Bootstrap <br>
-<b>Backend: </b> Nodejs, Expressjs
+<b>Backend: </b> Nodejs, Expressjs, MongoDB
 
 ## Demo
 <b>Home Page</b>
